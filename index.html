@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O clone</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        gap: 50px;
+        background-color: rgb(161, 186, 207);
+      }
+
+      .control {
+        display: flex;
+      }
+
+      .video__container {
+        height: 50%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .list__container {
+        height: 50%;
+        padding: 20px 0;
+      }
+
+      .list__container h2 {
+        margin-bottom: 20px;
+      }
+
+      .menu {
+        height: 100%;
+        overflow: auto;
+        background-color: #fafafa;
+      }
+
+      .menu li {
+        margin-bottom: 5px;
+        padding: 3px;
+
+        cursor: pointer;
+      }
+
+      .menu li:hover {
+        background-color: #c0c0c0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video__container">
+      <h1>Episodio 00</h1>
+      <video
+        src="https://server1.nflixvod.me/stream/360/Sh2PKU0EkYGgeEa"
+        controls
+        height="360"
+        width="640"
+      ></video>
+    </div>
+    <div class="list__container">
+      <h2>Lista de episódios</h2>
+      <ul class="menu"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
