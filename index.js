@@ -890,7 +890,7 @@ const links = [
   },
 ];
 
-const index = localStorage.getItem('lastEpisode');
+const index = localStorage.getItem('lastEpisode') || 0;
 
 links.forEach((item, index) => {
   const li = document.createElement('li');
